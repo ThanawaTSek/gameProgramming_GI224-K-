@@ -11,20 +11,32 @@ public class ActionManager : MonoBehaviour
     private CanvasGroup cg;
     
     public static ActionManager instance;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     
     private void Awake()
     {
         instance = this;
+        cg = GetComponent<CanvasGroup>();
     }
+    
+    private void HideCreateUnitButtons()
+    {
+        for (int i = 0; i < unitBtns.Length; i++)
+            unitBtns[i].gameObject.SetActive(false);
+    }
+    
+    private void HideCreateBuildingButtons()
+    {
+        for (int i = 0; i < buildingBtns.Length; i++)
+            buildingBtns[i].gameObject.SetActive(false);
+    }
+    
+    public void ClearAllInfo()
+    {
+        HideCreateUnitButtons();
+        HideCreateBuildingButtons();
+    }
+    
+    
+
+
 }
