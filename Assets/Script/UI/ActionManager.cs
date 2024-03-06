@@ -35,8 +35,68 @@ public class ActionManager : MonoBehaviour
         HideCreateUnitButtons();
         HideCreateBuildingButtons();
     }
+
+    private void ShowCreateUnitButtons(Building b)
+    {
+        if (b.IsFunctional)
+        {
+            for (int i = 0; i < b.Unitprefabs.Length; i++)
+            {
+                unitBtns[i].gameObject.SetActive(true);
+                Unit unit = b.Unitprefabs[i].GetComponent<Unit>();
+                unitBtns[i].image.sprite = unit.UnitPic;
+            }
+
+        }
+    }
     
+    private void ShowCreateBuildingButtons(Unit u) //Showing list of buildings when selecting a single unit
+    {
+        if (u.IsBuilder)
+        {
+            for (int i = 0; i < u.Builder.BuildingList.Length; i++)
+            {
+                buildingBtns[i].gameObject.SetActive(true);
+
+                if (u.Builder.BuildingList[i] != null)
+                {
+                    buildingBtns[i].GetComponent<Button>().interactable = true;
+                    buildingBtns[i].image.color = Color.white;
+                    Building building = u.Builder.BuildingList[i].GetComponent<Building>();
+                    buildingBtns[i].image.sprite = building.StructurePic;
+                }
+                else
+                {
+                    buildingBtns[i].GetComponent<Button>().interactable = false;
+                    buildingBtns[i].image.color = Color.clear;
+                }
+            }
+        }
+    }
     
+    public void ShowCreateUnitMode(Building b)
+    {
+        ClearAllInfo();
+        ShowCreateUnitButtons(b);
+    }
+
+    public void ShowBuilderMode(Unit unit)
+    {
+        ClearAllInfo();
+        ShowCreateBuildingButtons(unit);
+    }
+    
+    public void CreateUnitButton(int n)//Map with Create Unit Btns
+    {
+        //Debug.Log("Create " + n);
+        UnitSelect.instance.CurBuilding.ToCreateUnit(n);
+    }
+
+    public void CreateBuildingButton(int n)//Map with Create Building Btns
+    {
+        //Debug.Log("1 - Click Button: " + n);
+    }
+
 
 
 }
