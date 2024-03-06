@@ -907,6 +907,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2057173312}
     - target: {fileID: 3337575939428169799, guid: b6399bcb5d23ba241ad4b40a3624e9fb, type: 3}
+      propertyPath: isFunctional
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3337575939428169799, guid: b6399bcb5d23ba241ad4b40a3624e9fb, type: 3}
       propertyPath: unitPrefabs.Array.data[0]
       value: 
       objectReference: {fileID: 1917366058}
@@ -1687,7 +1691,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &268971623
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1819,7 +1823,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &330925690
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2704,7 +2708,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &661945214
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2940,7 +2944,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &722327503
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4519,7 +4523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1274678526
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5529,7 +5533,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1525679749
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5913,7 +5917,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1560270436
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6089,7 +6093,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1583034786
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6628,7 +6632,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1663550756
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7705,7 +7709,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1994263276
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7837,7 +7841,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2023858271
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8504,6 +8508,10 @@ PrefabInstance:
       propertyPath: faction
       value: 
       objectReference: {fileID: 2057173312}
+    - target: {fileID: 5343275048843399585, guid: 318093f449147974bb8d446b909337af, type: 3}
+      propertyPath: isFunctional
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5343275048843399585, guid: 318093f449147974bb8d446b909337af, type: 3}
       propertyPath: unitPrefabs.Array.data[0]
       value: 
