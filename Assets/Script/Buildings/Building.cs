@@ -31,7 +31,7 @@ public class Building : Structure
     
     void Start()
     {
-        curHP = maxHP;
+        
     }
 
     
