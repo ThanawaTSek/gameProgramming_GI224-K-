@@ -38,8 +38,8 @@ public abstract class Structure : MonoBehaviour
     public GameObject SelectionVisual { get { return selectionVisual; } }
 
     [SerializeField] 
-    private Structure structureCost;
-    public StructTureCost StruetureCost { get { return structureCost } set { structureCost = value; } }
+    private StructTureCost structureCost;
+    public StructTureCost StruetureCost { get { return structureCost; } set { structureCost = value; } }
     
     void Start()
     {
