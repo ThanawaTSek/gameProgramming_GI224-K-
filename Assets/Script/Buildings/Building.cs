@@ -20,10 +20,15 @@ public class Building : Structure
     [SerializeField] private float curUnitWaitTime = 0f;
 
     [SerializeField] private bool isFunctional;
+    public bool IsFunctional { get { return isFunctional; } set { isFunctional = value; } }
 
-    public bool IsFunctional
-    { get { return isFunctional; } set { isFunctional = value; } }
-
+    [SerializeField] private bool isHQ;
+    public bool IsHQ
+    { get { return isHQ; } }
+    //How deep into the ground
+    [SerializeField] private float intoTheGround = 5f;
+    public float IntoTheGround { get { return intoTheGround; } }
+    
     void Start()
     {
         curHP = maxHP;
