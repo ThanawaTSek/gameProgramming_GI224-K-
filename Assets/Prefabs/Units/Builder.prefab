@@ -4755,6 +4755,7 @@ GameObject:
   - component: {fileID: -8663803248585617852}
   - component: {fileID: 3287462304537897352}
   - component: {fileID: 2292582864611632273}
+  - component: {fileID: 78590469488820059}
   m_Layer: 6
   m_Name: Builder
   m_TagString: Unit
@@ -4906,6 +4907,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62d3eb4c3e1f44c43a6d8af789674d99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &78590469488820059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27d64a879cfd95441b97564019e70661, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toBuild: 0
+  showGhost: 0
+  buildingList:
+  - {fileID: 3235150170457684451, guid: b6399bcb5d23ba241ad4b40a3624e9fb, type: 3}
+  - {fileID: 8507868729169219307, guid: 318093f449147974bb8d446b909337af, type: 3}
+  ghostBuildingList:
+  - {fileID: 3235150170457684451, guid: fb037fb046b62374b8dd4406247ed3bf, type: 3}
+  - {fileID: 8507868729169219307, guid: 284d0bdcf05437945b0ec3649d7f185b, type: 3}
+  newBuilding: {fileID: 0}
+  ghostBuilding: {fileID: 0}
+  inProgressBuilding: {fileID: 0}
 --- !u!1 &186630
 GameObject:
   m_ObjectHideFlags: 0
