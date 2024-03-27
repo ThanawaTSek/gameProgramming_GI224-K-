@@ -2471,7 +2471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b4b701ab9558f42a9e1faaf7dbd719, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 1
+  id: 2
   unitName: 
   unitPic: {fileID: 21300000, guid: 6df3f0748bb0cfc449a15b1c5fa94a1e, type: 3}
   curHP: 0
@@ -2491,6 +2491,8 @@ MonoBehaviour:
     gold: 20
     stone: 0
   unitWaitTime: 0.1
+  isBuilder: 0
+  builder: {fileID: 0}
 --- !u!114 &3365372421506909211
 MonoBehaviour:
   m_ObjectHideFlags: 0
