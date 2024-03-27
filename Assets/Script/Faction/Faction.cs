@@ -88,4 +88,29 @@ public class Faction : MonoBehaviour
     {
         return aliveBuildings.Contains(b);
     }
+    
+    public void DeductBuildingCost(Building building)
+    {
+        food -= building.StructureCost.food;
+        wood -= building.StructureCost.wood;
+        gold -= building.StructureCost.gold;
+        stone -= building.StructureCost.stone;
+    }
+   
+    public bool CheckBuildingCost(Building building)
+    {
+        if (food < building.StructureCost.food)
+            return false;
+ 
+        if (wood < building.StructureCost.wood)
+            return false;
+ 
+        if (gold < building.StructureCost.gold)
+            return false;
+ 
+        if (stone < building.StructureCost.stone)
+            return false;
+ 
+        return true;
+    }
 }

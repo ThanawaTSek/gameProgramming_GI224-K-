@@ -8,7 +8,7 @@ public struct StructTureCost
 {
     public int food;
     public int wood;
-    public int glod;
+    public int gold;
     public int stone;
 }
 
@@ -39,7 +39,7 @@ public abstract class Structure : MonoBehaviour
 
     [SerializeField] 
     private StructTureCost structureCost;
-    public StructTureCost StruetureCost { get { return structureCost; } set { structureCost = value; } }
+    public StructTureCost StructureCost { get { return structureCost; } set { structureCost = value; } }
     
     void Start()
     {
