@@ -94,7 +94,6 @@ public class Building : Structure
     public void CreateUnitCompleted()
     {
         int id = recruitList[0].ID;
-
         if (unitPrefabs[id] == null)
             return;
 
@@ -103,6 +102,7 @@ public class Building : Structure
         recruitList.RemoveAt(0);
 
         Unit unit = unitObj.GetComponent<Unit>();
+        unit.Faction = faction;
         unit.MoveToPosition(rallyPoint.position); //Go to Rally Point
 
         //Add unit into faction's Army
@@ -119,5 +119,7 @@ public class Building : Structure
         if (SelectionVisual != null)
             SelectionVisual.SetActive(flag);
     }
+    
+    
     
 }
