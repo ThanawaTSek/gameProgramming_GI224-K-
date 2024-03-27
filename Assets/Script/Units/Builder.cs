@@ -178,4 +178,14 @@ public class Builder : MonoBehaviour
             }
         }
     }
+    
+    private void MoveToBuild(GameObject b)
+    {
+        if (b == null)
+            return;
+
+        unit.NavAgent.SetDestination(b.transform.position);
+        unit.NavAgent.isStopped = false;
+    }
+
 }
