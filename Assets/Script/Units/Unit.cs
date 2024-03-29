@@ -9,7 +9,7 @@ public enum UnitState
     Move,
     Attack,
     MoveToBuild,
-    BuildPRogress,
+    BuildProgress,
     Die
 }
 
